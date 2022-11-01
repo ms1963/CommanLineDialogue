@@ -43,3 +43,23 @@ Demo code for usage:
         print("You are " + str(answer) + " years old")
     
 ```
+
+
+Example dialogue:
+```
+================================
+Question of the day
+(age must be between 0 and 100)
+================================
+How old are you?
+% u
+Input error => try again!
+How old are you?
+% 887
+Invalid input
+How old are you?
+% 18
+Thanks for your answer
+You are 18 years old
+>>> 
+```
