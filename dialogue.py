@@ -1,5 +1,5 @@
 
-# class Interaction is used to obtain an answer from the user 
+# class Dialogue is used to obtain an answer from the user 
 # on the command line 
 # 
 # Arguments:
