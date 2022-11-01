@@ -30,7 +30,7 @@ Demo code for usage:
                             question = "How old are you?", 
                             hints = "(age must be between 0 and 100)", 
                             ack = "Thanks for your answer",  
-                            predicate = lambda x: int(x) in range(0, 100), 
+                            predicate = lambda x: int(x) in range(0, 101), 
                             conversion = lambda x: int(x)
                          )
                             
