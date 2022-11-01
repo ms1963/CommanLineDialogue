@@ -40,6 +40,6 @@ Demo code for usage:
     if answer == None:
         print("I see, you don't wanna answer this question")
     else:
-        print("You are " + str(answer))
+        print("You are " + str(answer) + " years old")
     
 ```
