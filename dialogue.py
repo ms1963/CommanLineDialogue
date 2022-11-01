@@ -8,7 +8,8 @@
 # prompt:     command prompt to be used on the command line 
 # hints:      additional hints to print on command line 
 # ack:        the text printed when user successfully answers
-# predicate:  lambda/function that checks the input for correctness
+# predicate:  lambda/function that checks the input for 
+#             complying with the specification
 # conversion: lambda/function that converts the user answer to the 
 #             required type
     
@@ -77,8 +78,7 @@ class Dialogue:
             print(self.ack)
         return value
         
-        
-        
+
         
 
 
