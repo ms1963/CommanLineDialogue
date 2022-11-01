@@ -28,7 +28,7 @@ Demo code for usage:
     interaction = Dialogue( title = "Question of the day", 
                             prompt = "% ", 
                             question = "How old are you?", 
-                            hints = "(you should lie)", 
+                            hints = "(age must be between 0 and 100)", 
                             ack = "Thanks for your answer",  
                             predicate = lambda x: int(x) in range(0, 100), 
                             conversion = lambda x: int(x)
