@@ -1,5 +1,25 @@
 # CommanLineDialogue
-A small class to ask the user questions on the command line
+A small class to ask the user questions on the command line.
+
+As I often have to implement user interactions such as asking questions in command line programs, I just developed a primitive class Dialogue. Dialogue also intercepts keyboard interrupts (control-C) to handle it.
+
+
+
+The exec()-function expects the following arguments:
+
++ title: the title to be printed by Dialogue
++ hints: additional information to be printed by Dialogue
++ question: the question or statement to print
++ ack: the message printed if the user submitten a valid answer
++ predicate:  predicate()-function is used by Dialogue to check wether the input is correct
++ conversion: conversion() - function is used to convert the user answer to a  target type
+
+In addition the following methods are provided:
+
++ setRepetitions(): how often should the Dialogue repeat until the dialogue is closed
++ setLineCharacter(): what character should be used to draw lines above and below title resp. hints. Per default " " is used
+
+
 
 Demo code for usage:
 ```
