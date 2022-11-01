@@ -1,7 +1,7 @@
 # CommanLineDialogue
 A small class to ask the user questions on the command line.
 
-As I often have to implement user interactions such as asking questions in command line programs, I just developed a primitive class Dialogue. Dialogue also intercepts keyboard interrupts (control-C) to handle it.
+As I often have to implement user interactions such as asking questions in command line programs, I just developed a primitive class Dialogue. Dialogue also intercepts keyboard interrupts (control-C) to prevent program abortion. 
 
 
 
@@ -13,6 +13,8 @@ The exec()-function expects the following arguments:
 + ack: the message printed if the user submitten a valid answer
 + predicate:  predicate()-function is used by Dialogue to check wether the input is correct
 + conversion: conversion() - function is used to convert the user answer to a  target type
+
+It returns the value (calculated by conversion() on valid user input, or None if the dialog was closed by control-c, the user did not provide a valid answer within the repetitions.
 
 In addition the following methods are provided:
 
