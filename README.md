@@ -1,4 +1,4 @@
-# CommanLineDialogue
+# Command Line Dialogue (for Python)
 A small class to ask the user questions on the command line.
 
 As I often have to implement user interactions such as asking questions in command line programs, I just developed a primitive class Dialogue. Dialogue also intercepts keyboard interrupts (control-C) to prevent program abortion. 
