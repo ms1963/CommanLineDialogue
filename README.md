@@ -35,7 +35,7 @@ Demo code for usage:
                          )
                             
     interaction.setRepetitions(2)
-    interaction.setLineCharacter(" ")
+    interaction.setLineCharacter("=")
     answer = interaction.exec()
     if answer == None:
         print("I see, you don't wanna answer this question")
