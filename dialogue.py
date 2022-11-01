@@ -33,16 +33,18 @@ class Dialogue:
         
     def drawBorder(self, length):
         size = len(self.char)
-        if (len != 0 and self.char !=""):
+        if (len != 0 and len(self.char) != 0):
             for i in range(0,(length+1) // size): 
                 print(self.char, end = "")
         print()
         
     def exec(self):
-        self.drawBorder(max(len(self.title), len(self.hints)))
-        print(self.title)
-        print(self.hints)
-        self.drawBorder(max(len(self.title), len(self.hints)))
+        maxsize = max(len(self.title), len(self.hints))
+        if (maxsize != 0):
+            self.drawBorder(maxsize)
+            print(self.title)
+            print(self.hints)
+            self.drawBorder(maxsize)
         completed = False
         counter = 0
         value = None
@@ -74,5 +76,11 @@ class Dialogue:
             # print acknowledgement for answering the question
             print(self.ack)
         return value
+        
+        
+        
+        
+
+
     
     
