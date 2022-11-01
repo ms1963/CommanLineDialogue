@@ -22,24 +22,27 @@ class Dialogue:
         self.predicate = predicate
         self.conversion = conversion
         self.iters = 3
-        char = "-"
+        self.char = ""
         
     def setRepetitions(self, count):
         assert count > 0, "Number must be greater than 0"
         self.iters = count
         
-    def setLineCharacter(self, char="-"):
+    def setLineCharacter(self, char): 
         self.char = char
         
-    def drawBorder(self, len, char=""):
-        for i in range(0,len): print(char, end = "")
+    def drawBorder(self, length):
+        size = len(self.char)
+        if (len != 0 and self.char !=""):
+            for i in range(0,(length+1) // size): 
+                print(self.char, end = "")
         print()
         
     def exec(self):
-        self.drawBorder(max(len(self.title), len(self.hints)), self.char)
+        self.drawBorder(max(len(self.title), len(self.hints)))
         print(self.title)
         print(self.hints)
-        self.drawBorder(max(len(self.title), len(self.hints)), self.char)
+        self.drawBorder(max(len(self.title), len(self.hints)))
         completed = False
         counter = 0
         value = None
@@ -71,4 +74,5 @@ class Dialogue:
             # print acknowledgement for answering the question
             print(self.ack)
         return value
+    
     
